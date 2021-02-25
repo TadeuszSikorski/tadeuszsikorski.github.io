@@ -1,0 +1,33 @@
+base_url = "https://tadeuszsikorski.github.io/"
+
+title = "Tadeusz Sikorski"
+description="**IT engineer, Programmer**"
+default_language = "en"
+
+compile_sass = true
+
+taxonomies = [
+    {name = "tags"}
+]
+
+build_search_index = false
+
+[markdown]
+highlight_code = true
+highlight_theme = "one-dark"
+
+[extra]
+profile = "icon.jpg"
+
+github = "TadeuszSikorski"
+twitter = "TadeuszSikors11"
+linkedin = "tadeusz-sikorski-210b45183"
+email = "sikorski.tadeusz@int.pl"
+
+color_themes = ["default"]
+
+[extra.comments]
+repo = "TadeuszSikorski/TadeuszSikorski.github.io"
+theme = "github-dark"
+label = "comment"
+

@@ -1,0 +1,87 @@
+{% macro menu(classes, bsize, title, term_name) %}
+<ul class="menu_list {{classes}}" >
+    {% if title == "Blog" %}
+        <li class="button {{bsize}} font_faint"><a href="/tags"><i class="fas fa-tags"></i>Tags</a></li>
+        <li class="button {{bsize}} font_faint"><a href="/blog/archive"><i class="fas fa-folder-open"></i>Archive</a></li>
+    {% endif %}
+    {% if title == "Archive" %}
+        <li class="button {{bsize}} font_faint"><a href="/blog"><i class="fas fa-file-alt"></i>Blog</a></li>
+        <li class="button {{bsize}} font_faint"><a href="/tags"><i class="fas fa-tags"></i>Tags</a></li>
+    {% endif %}
+    {% if title == "Tags" %}
+        <li class="button {{bsize}} font_faint"><a href="/blog"><i class="fas fa-file-alt"></i>Blog</a></li>
+        <li class="button {{bsize}} font_faint"><a href="/blog/archive"><i class="fas fa-folder-open"></i>Archive</a></li>
+    {% endif %}
+    {% if title == term_name %}
+        <li class="button {{bsize}} font_faint"><a href="/blog"><i class="fas fa-file-alt"></i>Blog</a></li>
+        <li class="button {{bsize}} font_faint"><a href="/blog/archive"><i class="fas fa-folder-open"></i>Archive</a></li>
+        <li class="button {{bsize}} font_faint"><a href="/tags"><i class="fas fa-tags"></i>Tags</a></li>
+    {% endif %}
+</ul>
+{% endmacro menu %}
+
+{% macro frontmatter(classes, date, word_count, read_time, page) %}
+<ul class="frontmatter {{classes}}" id="frontmatter">
+    <li>
+        <time class="article_time"  datetime="{{date}}">{{ date | date(format="%B %d, %Y") }}</time>
+    </li>
+    <span class="dotDivider"></span>
+    <li> {{word_count}} words </li>
+    <span class="dotDivider" ></span>
+    <li> {{read_time}} min </li>
+    <span class="dotDivider" ></span>
+    {{ blog_macros::tags(page=page, short=true) }}
+</ul>
+{% endmacro frontmatter %}
+
+{% macro tags(page, short=false) %}
+    {%- if page.taxonomies and page.taxonomies.tags %}
+        <span class="header_list">
+            {%- if short %}
+                tags:&nbsp;
+                {%- set sep = "," -%}
+            {% endif -%}
+            {%- for tag in page.taxonomies.tags %}
+                <a class="tags" href="{{ get_taxonomy_url(kind='tags', name=tag) | safe }}">#{{ tag }}</a>
+                {%- if not loop.last %}{{ sep | safe }}{% endif -%}
+            {% endfor -%}
+        </span>
+    {% endif -%}
+{% endmacro tags %}
+
+{% macro posts(pages) %}
+    <section class="post_list">
+        {% for page in pages %}
+        <article id="{{page.title}}" class="post_list_item">
+            <h1 class="article_title" >
+                <a href="{{page.permalink}}"  id="article_link" >{{page.title}}</a>
+            </h1>
+                {% if page.date %}
+                {{ blog_macros::frontmatter(classes="", date=page.date, word_count=page.word_count, read_time=page.reading_time, page=page) }}
+                {% else %}
+                {{ blog_macros::frontmatter(classes="", date="", word_count=page.word_count, read_time=page.reading_time, page=page) }}
+                {% endif %}
+                {% if page.summary %}
+                <p class="article_content">{{ page.summary | safe }}</p>
+                {% else %}
+                <p class="article_content">{{ page.content | striptags | truncate | safe }}</p>
+                {% endif %}
+                <a class="button small" href="{{page.permalink}}">Continue Reading →</a>
+        </article>
+        {% endfor %}
+    </section>
+{% endmacro posts %}
+
+{% macro titles(terms) %}
+<ul>
+    {% for term in terms %}
+    <article class="post_list_item">
+        <h4 class="article_title" >
+            <a href="{{ term.permalink | safe }}">
+                #{{ term.name }} ({{ term.pages | length }} post{{ term.pages | length | pluralize }})
+            </a>
+        </h4>
+    </article>
+    {% endfor %}
+</ul>
+{% endmacro titles %}

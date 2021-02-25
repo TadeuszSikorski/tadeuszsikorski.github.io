@@ -1,0 +1,9 @@
+{% extends "index.html" %}
+{% block content %}
+<header class="header">
+    {% block header %}
+    <h1 class="site_title">Ups! Strona nie została znaleziona.</h1>
+    {{ macros::not_found_menu(classes="header_list", bsize="small") }}
+    {% endblock header %}
+</header>
+{% endblock content %}

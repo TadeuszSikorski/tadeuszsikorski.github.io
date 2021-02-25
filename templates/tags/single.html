@@ -1,0 +1,21 @@
+{% extends "index.html" %}
+{% import "macros/blog.html" as blog_macros -%}
+
+{% block content %}
+<nav id="overlord" class="overlord" >
+    {{ macros::mini_logo(classes="", title=config.title, siteurl=config.base_url, logourl=config.extra.profile) }}
+</nav>    
+
+{% set title = term.name %}
+
+<header class="header">
+    {% block header %}
+    <h1 class="site_title">{{title}}</h1>
+    {{ blog_macros::menu(classes="header_list", bsize="small", title=title, term_name=term.name) }}
+    {% endblock header %}
+</header>
+
+<div class="post">
+        {{ blog_macros::posts(pages=term.pages) }}
+    </div>
+{% endblock content %}

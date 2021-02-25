@@ -1,0 +1,19 @@
+{% extends "index.html" %}
+
+{% block content %}
+<nav id="overlord" class="overlord" >
+    {{ macros::mini_logo(classes="", title=config.title, siteurl=config.base_url, logourl=config.extra.profile) }}
+</nav>
+
+<header class="header">
+    {% block header %}
+        <figure class="user_logo">
+            <a href="{{config.base_url}}" style="background-image: url({{config.base_url}}/img/{{config.extra.profile}}"></a>
+        </figure>
+        <h2 class="site_title">{{config.title}}</h2>
+        <div>{{config.description | markdown(inline=true) | safe }}</div>
+    {{ macros::portfolio_menu(classes="header_list", bsize="medium", extra=config.extra, siteurl=config.base_url) }}
+    {% endblock header %}
+</header>
+
+{% endblock content %}

@@ -1,0 +1,33 @@
+{% extends "index.html" %}
+{% import "macros/blog.html" as blog_macros -%}
+
+{% block content %}
+<nav id="overlord" class="overlord" >
+    {{ macros::mini_logo(classes="", title=config.title, siteurl=config.base_url, logourl=config.extra.profile) }}
+</nav>
+
+<header class="header">
+    {% block header %}
+    <h1 class="site_title">{{section.title}}</h1>
+    {{ blog_macros::menu(classes="header_list", bsize="small", title=section.title, term_name="") }}
+    {% endblock header %}
+</header>
+
+{{ blog_macros::posts(pages=paginator.pages) }}
+
+{% block pagination %}
+<nav class="pagination">
+    {% if paginator.previous %}
+    <span class="prev" ><a rel="prev" href="{{paginator.previous}}" class="button medium font_faint">← prev</a></span>
+    {% endif %}
+
+    {% if paginator.next %}
+    <span class="next" ><a rel="next" href="{{paginator.next}}" class="button medium font_faint">next →</a></span>
+    {% endif %}
+</nav>
+{% endblock pagination %}
+
+{% endblock content %}
+
+
+

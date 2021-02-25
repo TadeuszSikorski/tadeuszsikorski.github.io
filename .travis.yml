@@ -1,0 +1,17 @@
+dist: bionic
+
+language: generic
+
+before_script:
+  - curl -L https://github.com/getzola/zola/releases/download/v0.13.0/zola-v0.13.0-x86_64-unknown-linux-gnu.tar.gz | sudo tar xvzf - -C /usr/local/bin
+
+script:
+  - zola build
+
+deploy:
+  provider: pages
+  skip-cleanup: true
+  github-token: $GH_TOKEN
+  keep-history: true
+  local-dir: public
+  verbose: true
