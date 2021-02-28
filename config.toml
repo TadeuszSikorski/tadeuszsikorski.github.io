@@ -17,7 +17,8 @@ highlight_code = true
 highlight_theme = "one-dark"
 
 [extra]
-profile = "icon.jpg"
+profile = "face-profil.jpg"
+icon = "favicon.ico"
 
 github = "TadeuszSikorski"
 twitter = "TadeuszSikors11"
