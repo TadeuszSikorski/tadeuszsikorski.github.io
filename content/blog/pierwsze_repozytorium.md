@@ -98,7 +98,7 @@ Część teoretyczna zawierająca odpowiedzi na pytania:
 - czym jest git i dlaczego powstał?
 - po co jest nam potrzebny?
 
-Zawarta jest w tym [poście]().
+Zawarta jest w tym poście.
 
 W następnej części opowiem o klonowaniu repozytorium, preglądaniu historii zatwierdzeń, a także tworzeniu zdalnego repozytorium i wysyłaniem do niego zatwierdzonych plików i katalogów z naszego lokalnego repozytorium. 
 
