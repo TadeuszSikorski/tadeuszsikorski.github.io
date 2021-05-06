@@ -1,7 +1,6 @@
 +++
 title="Witaj przyjacielu!"
 date=2021-02-23
-index = "#0"
 
 [taxonomies]
 tags = ["first-post", "content-roadmap"]
@@ -31,7 +30,7 @@ Przedstawię podstawowe, a także bardziej zaawansowane **algorytmy i struktury 
 Na tle innych języków programowania przedstawię Ci jeszcze młody, mało jeszcze znany, ale warty uwagi język **Rust**. 
 
 Ponadto zaprezentuję język **Python**, idealny dla początkujących i dobrze sprawdzający się w wielu zastosowaniach. 
-Opowiem o **systemie kontroli Git**, jakże istotnym w pracy programisty. 
+Opowiem o [**systemie kontroli Git**](https://tadeuszsikorski.github.io/tags/git/), jakże istotnym w pracy programisty. 
 
 O **bazach danych** tych *relacyjnych* jak i *nierelacyjnych*. Jakie problemy rozwiązuje każda z nich, a także przybliżę deklaratywny język **SQL**.
 
