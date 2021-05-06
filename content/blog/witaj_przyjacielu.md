@@ -4,6 +4,7 @@ date=2021-02-23
 
 [taxonomies]
 tags = ["first-post", "content-roadmap"]
+index = 0
 +++
 
 Witaj, mam na imię Tadeusz. W tym poście chciałbym zaprezentować cel tego bloga. Będzie on m. in. o *programowaniu*, *testowaniu* i *inżynierii oprogramowania*. 
