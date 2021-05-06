@@ -1,10 +1,10 @@
 +++
 title="System kontroli wersji Git"
 date=2021-05-06
+index = 3
 
 [taxonomies]
 tags = ["git"]
-index = 3
 +++
 
 W tym poście odpowiemy sobie na kilka pytań, które dotyczą systemu kontroli wersji **Git**. Odpowiedzi na te pytania pozwolą nam poznać bliżej czym jest *system kontroli wesji* i przede wszystkim czym jest **git**.
