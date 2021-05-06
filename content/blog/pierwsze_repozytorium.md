@@ -1,10 +1,11 @@
 +++
 title="Pierwsze repozytorium  - wstęp do systemu kontroli Git"
 date=2021-05-06
+index = 1
 
 [taxonomies]
 tags = ["git"]
-index = 1
+
 +++
 
 Aby rozpocząć pracę z *systemem kontroli wersji* jakim jest **git** od tej praktyczniejszej strony trzeba go najpierw zainstalować. 
