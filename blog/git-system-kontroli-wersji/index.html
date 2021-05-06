@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+    <head>
+        
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" >
+        <meta http-equiv="content-type" content="text/html; charset=utf-8">
+
+        <!-- SEO -->
+        
+        <title> System kontroli wersji Git | Tadeusz Sikorski </title>
+        
+
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1" >
+
+        <link rel="shortcut icon" type="image/x-icon" href="https:&#x2F;&#x2F;tadeuszsikorski.github.io&#x2F;/img/favicon.ico" />
+        <link id="themeCSS" rel="stylesheet"
+                            href="https:&#x2F;&#x2F;tadeuszsikorski.github.io&#x2F;/default.css"
+                            />
+
+        <link rel="preload" href="https://fonts.googleapis.com/css?family=Montserrat:200,300,300i,400,500,500i,600,700,800,900|Raleway" as="style">
+        <link rel="preload"  href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous" as="style" >
+
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:200,300,300i,400,500,500i,600,700,800,900|Raleway">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css"  integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+        
+    </head>
+
+    <body>
+        
+<nav id="overlord" class="overlord" >
+  
+<figure class="mini_logo ">
+    <a href="https:&#x2F;&#x2F;tadeuszsikorski.github.io&#x2F;" style="background-image: url(https:&#x2F;&#x2F;tadeuszsikorski.github.io&#x2F;/img/face-profil.jpg)"></a>
+</figure>
+<h5>
+    <a href="https:&#x2F;&#x2F;tadeuszsikorski.github.io&#x2F;">Tadeusz Sikorski</a>
+</h5>
+
+</nav>
+
+<section class="post_container">
+  <article>
+    
+      <h1 class="article_title"><a href="https:&#x2F;&#x2F;tadeuszsikorski.github.io&#x2F;blog&#x2F;git-system-kontroli-wersji&#x2F;" id="article_link">System kontroli wersji Git</a></h1>
+      
+<ul class="frontmatter frontmatter_page" id="frontmatter">
+    <li>
+        <time class="article_time"  datetime="2021-05-06">May 06, 2021</time>
+    </li>
+    <span class="dotDivider"></span>
+    <li> 466 words </li>
+    <span class="dotDivider" ></span>
+    <li> 3 min </li>
+    <span class="dotDivider" ></span>
+    
+        <span class="header_list">
+                tags:&nbsp;
+                <a class="tags" href="https://tadeuszsikorski.github.io/tags/git/">#git</a></span>
+    
+</ul>
+
+      <p>W tym poście odpowiemy sobie na kilka pytań, które dotyczą systemu kontroli wersji <strong>Git</strong>. Odpowiedzi na te pytania pozwolą nam poznać bliżej czym jest <em>system kontroli wesji</em> i przede wszystkim czym jest <strong>git</strong>.</p>
+<p>Jeżeli znane Ci już są poniższe informacje lub chcesz rozpocząć poznawanie gita od praktyczniejszej strony zapraszam Cię tutaj.</p>
+<h2 id="co-to-jest-system-kontroli-wersji">Co to jest <em>system kontroli wersji</em>?</h2>
+<p>Według <a href="https://pl.wikipedia.org/wiki/System_kontroli_wersji">Wikipedii</a> to oprogramowanie służące do śledzenia zmian głównie w kodzie źródłowym oraz pomocy programistom w łączeniu zmian dokonanych w plikach przez wiele osób w różnym czasie.</p>
+<p>Ze względu na architekturę można je podzielić na:</p>
+<ul>
+<li>lokalne, pozwalające na zapisanie danych jedynie na lokalnym komputerze</li>
+<li>scentralizowane, oparte na architekturze klient-serwer </li>
+<li>rozproszone, oparte na architekturze P2P.</li>
+</ul>
+<p>Do ostatniej z tych grup należy <strong>git</strong>.</p>
+<h2 id="czym-jest-git-i-dlaczego-powstal">Czym jest git i dlaczego powstał?</h2>
+<p>Git to jak powyżej rozproszony system kontroli wersji. Stanowi on wolne oprogramowanie.</p>
+<p>Stworzył go <strong>Linus Torvalds</strong>, twórca Linuksa jako narzędzie wspomagające rozwój <em>jądra Linux</em>. Powstał on po tym, jak <em>BitKeeper</em>, używany wtedy do rozwoju Linuksa, przestał być darmowy dla projektów o otwartym kodzie źródłowym. <strong>Linus</strong> początkowo szukał systemu, który spełni jego oczekiwania, jednak jego posukiwania nie przyniosły poądanego rezultatu. Zmuszony więc był do stworzenia własnego systemu kontroli wersji. </p>
+<h2 id="cechy-gita">Cechy gita</h2>
+<ul>
+<li>wsparcie dla rozgałęzionego procesu tworzenia oprogramowania</li>
+<li>wsparcie dla istniejących protokołów sieciowych</li>
+<li>efektywna praca z dużymi projektami</li>
+<li>praca nad projektem w trybie offline</li>
+<li>każda rewizja to obraz całego projektu</li>
+</ul>
+<h2 id="po-co-git-jest-nam-potrzebny">Po co git jest nam potrzebny?</h2>
+<p>Najważniejsze pytanie. System kontroli wersji jakim jest <strong>git</strong> będzie nam potrzebny do zapisywania zmian kodu źródłowego naszych aplikacji, abyśmy potem mogli je śledzić. </p>
+<p>Aby móc łatwiej wersjonować tworzony kod, nie musząc ręcznie tworzyć jego migawek, co na dłuższą metę może powodować pogubienie się w tym, w której migawce była żądana funkcjonalność. Nie wspominając już o tworzeniu projektów zespołowych.</p>
+<p>Pozwala nam rozgałęziać drzewo projektu, poprzez tworzenie nowych gałęzi dla nowych pobocznych funkcjonalności. </p>
+<p>Ułatwia pracę nad projektem zespołowi programistów. Każdy może pracować nad własną kopią projektu i zarządzać daną gałęzią.</p>
+<p>Wieloplatformowość gita i możliwość stworzenia zdalnego repozytorium pozwala na pracę nad projektem zarówno w systemach GNU/Linux, MacOS jak i Windows.</p>
+<h2 id="podsumowanie">Podsumowanie</h2>
+<p>Jak łatwo jest zauważyć obecnie znajomość <strong>gita</strong> powinna być i jest podstawową umiejętnością większości programistów tworzących kod, a także architektów i team leaderów. Redukuje dużą ilość potencjalnych problemów na które można się narazić bez korzystania z niego.</p>
+<h2 id="zrodla">Źródła</h2>
+<ol>
+<li><a href="http://git-scm.com/">Oficjalna strona Gita</a></li>
+<li><a href="http://git-scm.com/doc">Oficjalna dokumentacja Gita</a></li>
+<li><a href="http://git-scm.com/book/pl/v2/Pierwsze-kroki-Wprowadzenie-do-kontroli-wersji">Pierwsze kroki - Wprowadzenie do kontroli wersji</a></li>
+<li><a href="http://git-scm.com/book/pl/v2/Pierwsze-kroki-Kr%C3%B3tka-historia-Git">Pierwsze kroki - Krótka historia Git</a></li>
+<li><a href="http://git-scm.com/book/pl/v2/Pierwsze-kroki-Podstawy-Git">Pierwsze kroki - Podstawy Git</a></li>
+<li><a href="https://pl.wikipedia.org/wiki/System_kontroli_wersji">System kontroli wersji - Wikipedia</a></li>
+<li><a href="https://pl.wikipedia.org/wiki/Git_(oprogramowanie)">Git - Wikipedia</a></li>
+</ol>
+
+    
+  </article>
+</section>
+
+
+<script src="https://utteranc.es/client.js"
+        repo="TadeuszSikorski&#x2F;TadeuszSikorski.github.io"
+        
+        issue-term="System kontroli wersji Git"
+        
+        
+        label="comment"
+        
+        theme="github-dark"
+        crossorigin="anonymous"
+        async>
+</script>
+
+
+
+    </body>
+</html>

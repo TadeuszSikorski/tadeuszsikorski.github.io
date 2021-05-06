@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+    <head>
+        
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" >
+        <meta http-equiv="content-type" content="text/html; charset=utf-8">
+
+        <!-- SEO -->
+        
+        <title> Pierwsze repozytorium  - wstęp do systemu kontroli Git | Tadeusz Sikorski </title>
+        
+
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1" >
+
+        <link rel="shortcut icon" type="image/x-icon" href="https:&#x2F;&#x2F;tadeuszsikorski.github.io&#x2F;/img/favicon.ico" />
+        <link id="themeCSS" rel="stylesheet"
+                            href="https:&#x2F;&#x2F;tadeuszsikorski.github.io&#x2F;/default.css"
+                            />
+
+        <link rel="preload" href="https://fonts.googleapis.com/css?family=Montserrat:200,300,300i,400,500,500i,600,700,800,900|Raleway" as="style">
+        <link rel="preload"  href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous" as="style" >
+
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:200,300,300i,400,500,500i,600,700,800,900|Raleway">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css"  integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+        
+    </head>
+
+    <body>
+        
+<nav id="overlord" class="overlord" >
+  
+<figure class="mini_logo ">
+    <a href="https:&#x2F;&#x2F;tadeuszsikorski.github.io&#x2F;" style="background-image: url(https:&#x2F;&#x2F;tadeuszsikorski.github.io&#x2F;/img/face-profil.jpg)"></a>
+</figure>
+<h5>
+    <a href="https:&#x2F;&#x2F;tadeuszsikorski.github.io&#x2F;">Tadeusz Sikorski</a>
+</h5>
+
+</nav>
+
+<section class="post_container">
+  <article>
+    
+      <h1 class="article_title"><a href="https:&#x2F;&#x2F;tadeuszsikorski.github.io&#x2F;blog&#x2F;pierwsze-repozytorium&#x2F;" id="article_link">Pierwsze repozytorium  - wstęp do systemu kontroli Git</a></h1>
+      
+<ul class="frontmatter frontmatter_page" id="frontmatter">
+    <li>
+        <time class="article_time"  datetime="2021-05-06">May 06, 2021</time>
+    </li>
+    <span class="dotDivider"></span>
+    <li> 555 words </li>
+    <span class="dotDivider" ></span>
+    <li> 3 min </li>
+    <span class="dotDivider" ></span>
+    
+        <span class="header_list">
+                tags:&nbsp;
+                <a class="tags" href="https://tadeuszsikorski.github.io/tags/git/">#git</a></span>
+    
+</ul>
+
+      <p>Aby rozpocząć pracę z <em>systemem kontroli wersji</em> jakim jest <strong>git</strong> od tej praktyczniejszej strony trzeba go najpierw zainstalować. </p>
+<h2 id="instalacja-git">Instalacja git</h2>
+<p>W zależności od posiadanego systemu operacyjnego można to wykonać za pośrednictwem strony na której znajdują się niezbędne instrukcje służące pomocą jak to zrobić. Oto podana strona:</p>
+<p>https://git-scm.com/book/en/v2/Getting-Started-Installing-Git</p>
+<p>lub w wersji polskiej:</p>
+<p>https://git-scm.com/book/pl/v2/Pierwsze-kroki-Instalacja-Git</p>
+<h2 id="pierwsze-repozytorium">Pierwsze repozytorium</h2>
+<p>Kiedy już dokonamy instalacji kolejnym krokiem będzie stworzenie katalogu o nazwie first-repo. Na przykład z poziomu linii poleceń:</p>
+<pre style="background-color:#2b303b;">
+<code class="language-bash" data-lang="bash"><span style="color:#eb6772;">mkdir</span><span style="color:#abb2bf;"> first-repo </span><span style="color:#adb7c9;">&amp;&amp; </span><span style="color:#5ebfcc;">cd</span><span style="color:#abb2bf;"> first-repozytorium
+</span></code></pre>
+<p>Tworzymy <em>puste</em> <strong>lokalne repozytorium Git</strong> za pomocą polecenia:</p>
+<pre style="background-color:#2b303b;">
+<code class="language-bash" data-lang="bash"><span style="color:#eb6772;">git</span><span style="color:#abb2bf;"> init
+</span></code></pre>
+<p>Następnie aby zobaczyć informacje na temat początkowego statusu naszego pierszego repo wystarczy:</p>
+<pre style="background-color:#2b303b;">
+<code class="language-bash" data-lang="bash"><span style="color:#eb6772;">git</span><span style="color:#abb2bf;"> status
+</span></code></pre>
+<p>Wyświetlą nam się poniższe informacje:</p>
+<pre style="background-color:#2b303b;">
+<code class="language-bash" data-lang="bash"><span style="color:#eb6772;">On</span><span style="color:#abb2bf;"> branch master
+
+</span><span style="color:#eb6772;">No</span><span style="color:#abb2bf;"> commits yet
+
+</span><span style="color:#eb6772;">nothing</span><span style="color:#abb2bf;"> to commit (create/copy files and use </span><span style="color:#9acc76;">&quot;git add&quot;</span><span style="color:#abb2bf;"> to track)
+</span></code></pre>
+<p>Oznacza to, że jesteśmy w głównej gałęzi i nie mamy jeszcze wykonanych żadnych zatwierdzeń (<em>commits</em>). A także nie mamy żadnych plików, które możemy zatwierdzić. Mamy za to małą podpowiedź w nawiasach, która informuje nas o tym, że gdy dodamy lub skopiujemy pliki do naszego katalogu możemy je dodać do śledzenia za pomocą:</p>
+<pre style="background-color:#2b303b;">
+<code class="language-bash" data-lang="bash"><span style="color:#eb6772;">git</span><span style="color:#abb2bf;"> add 
+</span></code></pre><h2 id="dodawanie-i-zatwierdzenie-pierwszego-pliku-do-repozytorium">Dodawanie i zatwierdzenie pierwszego pliku do repozytorium</h2>
+<p>Tak więc tworzymy przykładowy plik o nazwie <em>file.txt</em>. Następnie znów wykonujemy polecenie <strong>git status</strong>. Naszym oczom powinny ukazać się następujące informacje:</p>
+<pre style="background-color:#2b303b;">
+<code class="language-bash" data-lang="bash"><span style="color:#eb6772;">On</span><span style="color:#abb2bf;"> branch master
+
+</span><span style="color:#eb6772;">No</span><span style="color:#abb2bf;"> commits yet
+
+</span><span style="color:#eb6772;">Untracked</span><span style="color:#abb2bf;"> files:
+  (</span><span style="color:#eb6772;">use </span><span style="color:#9acc76;">&quot;git add &lt;file&gt;...&quot;</span><span style="color:#abb2bf;"> to include in what will be committed)
+        </span><span style="color:#eb6772;">file.txt
+
+nothing</span><span style="color:#abb2bf;"> added to commit but untracked files present (use </span><span style="color:#9acc76;">&quot;git add&quot;</span><span style="color:#abb2bf;"> to track)
+</span></code></pre>
+<p>Mamy plik, który możemy dodać do zatwierdzenia i utworzyć nasze pierwsze zatwiedzenie następującymi poleceniami:</p>
+<pre style="background-color:#2b303b;">
+<code class="language-bash" data-lang="bash"><span style="color:#eb6772;">git</span><span style="color:#abb2bf;"> add file.txt </span><span style="color:#adb7c9;">&amp;&amp; </span><span style="color:#eb6772;">git</span><span style="color:#abb2bf;"> commit</span><span style="color:#eb6772;"> -m </span><span style="color:#9acc76;">&quot;Initial commit&quot;
+</span></code></pre>
+<p>Po wykonaniu powyższych komend dostaniemy podobną do tej informację:</p>
+<pre style="background-color:#2b303b;">
+<code class="language-bash" data-lang="bash"><span style="color:#eb6772;">[master</span><span style="color:#abb2bf;"> (root-commit) </span><span style="color:#eb6772;">0915b29]</span><span style="color:#abb2bf;"> Initial commit
+ </span><span style="color:#eb6772;">1</span><span style="color:#abb2bf;"> file changed, 1 insertion(+)
+ </span><span style="color:#eb6772;">create</span><span style="color:#abb2bf;"> mode 100644 file.txt
+</span></code></pre>
+<p>Zatwierdzenie z jednym plikiem zostało poprawnie dodane. A po ponownym wyświetleniu statusu dostaniemy taką oto informację:</p>
+<pre style="background-color:#2b303b;">
+<code class="language-bash" data-lang="bash"><span style="color:#eb6772;">On</span><span style="color:#abb2bf;"> branch master
+</span><span style="color:#eb6772;">nothing</span><span style="color:#abb2bf;"> to commit, working tree clean
+</span></code></pre>
+<p>Oznacza to, że w gałęzi w której aktualnie jesteśmy, w tym przypadku gałęzi głównej nie ma nic do zatwierdzenia, bo pliki znajdujące się w naszym katalogu zostały już zatwierdzone i drzewo jest czyste.</p>
+<p>Gdy zakładamy puste repozytorium git w katalogu w którym mamy już pliki lub katalogi i nie chcemy je dodawać pojedyńczo tylko od razu wszystko za jednym razem można to zrobić za pomocą komendy:</p>
+<pre style="background-color:#2b303b;">
+<code class="language-bash" data-lang="bash"><span style="color:#eb6772;">git</span><span style="color:#abb2bf;"> add .
+</span></code></pre><h2 id="podsumowanie">Podsumowanie</h2>
+<p>Tyle tytułem praktycznego wstępu. Nauczyłeś się właśnie tworzyć pierwsze <strong>lokalne repozytorium Git</strong> i dodawać do niego pliki i katalogi, a także je zatwierdzać.</p>
+<p>Część teoretyczna zawierająca odpowiedzi na pytania:</p>
+<ul>
+<li>co to jest system kontroli wersji?</li>
+<li>czym jest git i dlaczego powstał?</li>
+<li>po co jest nam potrzebny?</li>
+</ul>
+<p>Zawarta jest w tym poście.</p>
+<p>W następnej części opowiem o klonowaniu repozytorium, preglądaniu historii zatwierdzeń, a także tworzeniu zdalnego repozytorium i wysyłaniem do niego zatwierdzonych plików i katalogów z naszego lokalnego repozytorium. </p>
+<p>Dla tych który chcą uzupełnić i poszerzyć swoją wiedzę odsyłam do źródeł.</p>
+<h2 id="zrodla">Źródła</h2>
+<ol>
+<li><a href="http://git-scm.com/book/en/v2/Getting-Started-Installing-Git">Getting Started - Installing Git</a></li>
+<li><a href="http://git-scm.com/book/en/v2/Git-Basics-Getting-a-Git-Repository">Git Basics - Getting a Git Repository</a></li>
+<li><a href="http://git-scm.com/book/en/v2/Git-Basics-Recording-Changes-to-the-Repository">Git Basics - Recording Changes to the Repository</a></li>
+</ol>
+
+    
+  </article>
+</section>
+
+
+<script src="https://utteranc.es/client.js"
+        repo="TadeuszSikorski&#x2F;TadeuszSikorski.github.io"
+        
+        issue-term="Pierwsze repozytorium  - wstęp do systemu kontroli Git"
+        
+        
+        label="comment"
+        
+        theme="github-dark"
+        crossorigin="anonymous"
+        async>
+</script>
+
+
+
+    </body>
+</html>
