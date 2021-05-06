@@ -23,7 +23,7 @@ https://git-scm.com/book/pl/v2/Pierwsze-kroki-Instalacja-Git
 
 Kiedy już dokonamy instalacji kolejnym krokiem będzie stworzenie katalogu o nazwie first-repo. Na przykład z poziomu linii poleceń:
 ```bash
-mkdir first-repo && cd first-repozytorium
+mkdir first-repo && cd first-repo
 ```
 
 Tworzymy *puste* **lokalne repozytorium Git** za pomocą polecenia:
@@ -98,7 +98,7 @@ Część teoretyczna zawierająca odpowiedzi na pytania:
 - czym jest git i dlaczego powstał?
 - po co jest nam potrzebny?
 
-Zawarta jest w tym poście.
+Zawarta jest w tym [poście](https://tadeuszsikorski.github.io/blog/git-system-kontroli-wersji/).
 
 W następnej części opowiem o klonowaniu repozytorium, preglądaniu historii zatwierdzeń, a także tworzeniu zdalnego repozytorium i wysyłaniem do niego zatwierdzonych plików i katalogów z naszego lokalnego repozytorium. 
 
