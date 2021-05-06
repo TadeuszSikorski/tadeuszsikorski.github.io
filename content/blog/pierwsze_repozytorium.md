@@ -1,7 +1,6 @@
 +++
 title="Pierwsze repozytorium  - wstęp do systemu kontroli Git"
 date=2021-05-06
-index = 1
 
 [taxonomies]
 tags = ["git"]
