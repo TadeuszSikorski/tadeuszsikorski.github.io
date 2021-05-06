@@ -8,7 +8,7 @@ tags = ["git"]
 
 W tym poście odpowiemy sobie na kilka pytań, które dotyczą systemu kontroli wersji **Git**. Odpowiedzi na te pytania pozwolą nam poznać bliżej czym jest *system kontroli wesji* i przede wszystkim czym jest **git**.
 
-Jeżeli znane Ci już są poniższe informacje lub chcesz rozpocząć poznawanie gita od praktyczniejszej strony zapraszam Cię tutaj.
+Jeżeli znane Ci już są poniższe informacje lub chcesz rozpocząć poznawanie gita od praktyczniejszej strony zapraszam Cię [tutaj](https://tadeuszsikorski.github.io/blog/pierwsze-repozytorium/).
 
 ## Co to jest *system kontroli wersji*?
 
