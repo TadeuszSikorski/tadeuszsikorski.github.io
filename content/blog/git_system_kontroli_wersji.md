@@ -1,7 +1,6 @@
 +++
 title="System kontroli wersji Git"
 date=2021-05-06
-index = 3
 
 [taxonomies]
 tags = ["git"]
