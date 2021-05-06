@@ -1,7 +1,7 @@
 +++
 title="Witaj przyjacielu!"
 date=2021-02-23
-index = 0
+index = "#0"
 
 [taxonomies]
 tags = ["first-post", "content-roadmap"]
