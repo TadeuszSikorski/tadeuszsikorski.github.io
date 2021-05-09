@@ -21,17 +21,17 @@ https://git-scm.com/book/pl/v2/Pierwsze-kroki-Instalacja-Git
 
 ## Pierwsze repozytorium
 
-Kiedy już dokonamy instalacji kolejnym krokiem będzie stworzenie katalogu o nazwie first-repo. Na przykład z poziomu linii poleceń:
+Kiedy już dokonamy instalacji kolejnym krokiem będzie stworzenie katalogu o nazwie *fresh-evergreen*. Na przykład z poziomu linii poleceń:
 ```bash
-mkdir first-repo && cd first-repo
+mkdir fresh-evergreen && cd fresh-evergreen
 ```
 
-Tworzymy *puste* **lokalne repozytorium Git** za pomocą polecenia:
+Tworzymy puste **lokalne repozytorium Git** za pomocą polecenia:
 ```bash
 git init
 ```
 
-Następnie aby zobaczyć informacje na temat początkowego statusu naszego pierszego repo wystarczy:
+Następnie aby zobaczyć informacje na temat początkowego statusu naszego pierwszego repo wystarczy:
 ```bash
 git status
 ```
@@ -45,14 +45,16 @@ No commits yet
 nothing to commit (create/copy files and use "git add" to track)
 ```
 
-Oznacza to, że jesteśmy w głównej gałęzi i nie mamy jeszcze wykonanych żadnych zatwierdzeń (*commits*). A także nie mamy żadnych plików, które możemy zatwierdzić. Mamy za to małą podpowiedź w nawiasach, która informuje nas o tym, że gdy dodamy lub skopiujemy pliki do naszego katalogu możemy je dodać do śledzenia za pomocą:
+Oznacza to, że jesteśmy w głównej gałęzi i nie mamy jeszcze wykonanych żadnych zatwierdzeń (*commits*). A także to, że nie mamy żadnych plików, które możemy zatwierdzić. Mamy za to małą podpowiedź w nawiasach, która informuje nas o tym, że gdy dodamy lub skopiujemy pliki do katalogu naszego repozytorium możemy je dodać do śledzenia za pomocą:
 ```bash
-git add 
+git add .
 ```
 
 ## Dodawanie i zatwierdzenie pierwszego pliku do repozytorium
 
-Tak więc tworzymy przykładowy plik o nazwie *file.txt*. Następnie znów wykonujemy polecenie **git status**. Naszym oczom powinny ukazać się następujące informacje:
+Tak więc tworzymy plik o nazwie **README.md**. *README* to plik tekstowy, który wprowadza i wyjaśnia projekt. Zawiera informacje, które są powszechnie wymagane, aby zrozumieć, o czym jest projekt. Więcej informacji o tym po co jest *README.md*, jak je utworzyć znajdziesz [tutaj](https://www.makeareadme.com/).
+
+Następnie znów wykonujemy polecenie **git status**. Naszym oczom powinny ukazać się następujące informacje:
 ```bash
 On branch master
 
@@ -60,21 +62,22 @@ No commits yet
 
 Untracked files:
   (use "git add <file>..." to include in what will be committed)
-        file.txt
+        README.md
 
 nothing added to commit but untracked files present (use "git add" to track)
 ```
 
 Mamy plik, który możemy dodać do zatwierdzenia i utworzyć nasze pierwsze zatwiedzenie następującymi poleceniami:
 ```bash
-git add file.txt && git commit -m "Initial commit"
+git add README.md && git commit -m "Initial commit"
 ```
+Ostatnie polecenie służące do zatwierdzenia dodanych plików (zmian) posiada także informację, którą piszemy w cudzysłowach. Oznacza ona wiadomość dla nas o tym jakie zmiany zostały zatwierdzone.
 
 Po wykonaniu powyższych komend dostaniemy podobną do tej informację:
 ```bash
-[master (root-commit) 0915b29] Initial commit
- 1 file changed, 1 insertion(+)
- create mode 100644 file.txt
+[master (root-commit) 9677ffa] Initial commit
+ 1 file changed, 3 insertions(+)
+ create mode 100644 README.md
 ```
 
 Zatwierdzenie z jednym plikiem zostało poprawnie dodane. A po ponownym wyświetleniu statusu dostaniemy taką oto informację:
@@ -85,22 +88,17 @@ nothing to commit, working tree clean
 
 Oznacza to, że w gałęzi w której aktualnie jesteśmy, w tym przypadku gałęzi głównej nie ma nic do zatwierdzenia, bo pliki znajdujące się w naszym katalogu zostały już zatwierdzone i drzewo jest czyste.
 
-Gdy zakładamy puste repozytorium git w katalogu w którym mamy już pliki lub katalogi i nie chcemy je dodawać pojedyńczo tylko od razu wszystko za jednym razem można to zrobić za pomocą komendy:
-```bash
-git add .
-```
-
 ## Podsumowanie
-Tyle tytułem praktycznego wstępu. Nauczyłeś się właśnie tworzyć pierwsze **lokalne repozytorium Git** i dodawać do niego pliki i katalogi, a także je zatwierdzać.  
+Tyle tytułem praktycznego wstępu. Nauczyłeś się właśnie tworzyć pierwsze **lokalne repozytorium Git** i dodawać do niego pliki, a następnie zatwierdzać je do śledzenia.
 
 Część teoretyczna zawierająca odpowiedzi na pytania:
-- co to jest system kontroli wersji?
-- czym jest git i dlaczego powstał?
-- po co jest nam potrzebny?
+- *co to jest system kontroli wersji?*
+- *czym jest **git** i dlaczego powstał?*
+- *po co jest nam potrzebny?*
 
 Zawarta jest w tym [poście](https://tadeuszsikorski.github.io/blog/git-system-kontroli-wersji/).
 
-W następnej części opowiem o klonowaniu repozytorium, preglądaniu historii zatwierdzeń, a także tworzeniu zdalnego repozytorium i wysyłaniem do niego zatwierdzonych plików i katalogów z naszego lokalnego repozytorium. 
+W następnej części opowiem o tworzeniu i podpinaniu zdalnego repozytorium oraz wysyłaniem do niego zatwierdzonych plików z naszego lokalnego repozytorium. 
 
 Dla tych który chcą uzupełnić i poszerzyć swoją wiedzę odsyłam do źródeł.
 
@@ -109,3 +107,4 @@ Dla tych który chcą uzupełnić i poszerzyć swoją wiedzę odsyłam do źród
 1. [Getting Started - Installing Git](http://git-scm.com/book/en/v2/Getting-Started-Installing-Git)
 2. [Git Basics - Getting a Git Repository](http://git-scm.com/book/en/v2/Git-Basics-Getting-a-Git-Repository)
 3. [Git Basics - Recording Changes to the Repository](http://git-scm.com/book/en/v2/Git-Basics-Recording-Changes-to-the-Repository)
+4. [Make a README - README 101](https://www.makeareadme.com/)
