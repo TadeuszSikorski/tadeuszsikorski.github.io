@@ -1,5 +1,5 @@
 +++
-title="System kontroli wersji Git"
+title="Git - System kontroli wersji"
 date=2021-05-06
 
 [taxonomies]
@@ -8,7 +8,7 @@ tags = ["git"]
 
 W tym poście odpowiemy sobie na kilka pytań, które dotyczą systemu kontroli wersji **Git**. Odpowiedzi na te pytania pozwolą nam poznać bliżej czym jest *system kontroli wesji* i przede wszystkim czym jest **git**.
 
-Jeżeli znane Ci już są poniższe informacje lub chcesz rozpocząć poznawanie gita od praktyczniejszej strony zapraszam Cię [tutaj](https://tadeuszsikorski.github.io/blog/pierwsze-repozytorium/).
+Jeżeli znane Ci już są poniższe informacje lub chcesz rozpocząć poznawanie gita od praktyczniejszej strony zapraszam Cię [**tutaj**](https://tadeuszsikorski.github.io/blog/pierwsze-repozytorium/).
 
 ## Co to jest *system kontroli wersji*?
 
@@ -24,7 +24,7 @@ Do ostatniej z tych grup należy **git**.
 
 ## Czym jest git i dlaczego powstał?
 
-Git to jak powyżej rozproszony system kontroli wersji. Stanowi on wolne oprogramowanie.
+Git to rozproszony system kontroli wersji, który stanowi on wolne oprogramowanie.
 
 Stworzył go **Linus Torvalds**, twórca Linuksa jako narzędzie wspomagające rozwój *jądra Linux*. Powstał on po tym, jak *BitKeeper*, używany wtedy do rozwoju Linuksa, przestał być darmowy dla projektów o otwartym kodzie źródłowym. **Linus** początkowo szukał systemu, który spełni jego oczekiwania, jednak jego posukiwania nie przyniosły poądanego rezultatu. Zmuszony więc był do stworzenia własnego systemu kontroli wersji. 
 
