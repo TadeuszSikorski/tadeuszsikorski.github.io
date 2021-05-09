@@ -47,7 +47,7 @@
         <time class="article_time"  datetime="2021-05-08">May 08, 2021</time>
     </li>
     <span class="dotDivider"></span>
-    <li> 683 words </li>
+    <li> 686 words </li>
     <span class="dotDivider" ></span>
     <li> 4 min </li>
     <span class="dotDivider" ></span>
@@ -58,16 +58,16 @@
     
 </ul>
 
-      <p>Na samym początku musimy odpowiedzieć sobie na pytanie: Po co nam <strong>zdalne repozytorium</strong>? </p>
-<p>Służy ono do współdzielenia pracy między osobami pracującymi nad jednym projektem, ale może także być wykorzystane do tworzenia kopii zapasowej lokalnego repozytorium.</p>
+      <p>Na samym początku musimy odpowiedzieć sobie na pytanie: </p>
+<p>Po co nam <strong>zdalne repozytorium</strong>? </p>
+<p>Służy ono do współdzielenia pracy między osobami pracującymi nad jednym projektem, lecz może także być wykorzystane do tworzenia kopii zapasowej lokalnego repozytorium.</p>
 <h2 id="dodanie-zdalnego-repozytorium">Dodanie zdalnego repozytorium</h2>
-<p>Aby podpiąć zdalne repozytorium do naszego zdalnego repoytorium trzeba w konsoli wpisać następującą komendę:</p>
+<p>Aby podpiąć zdalne repozytorium do naszego lokalnego repozytorium trzeba w konsoli wpisać następującą komendę:</p>
 <pre style="background-color:#2b303b;">
 <code class="language-bash" data-lang="bash"><span style="color:#eb6772;">git</span><span style="color:#abb2bf;"> remote add origin https://github.com/TadeuszSikorski/fresh-evergreen.git
 </span></code></pre>
-<p>Mamy tutaj <strong>git remote add</strong> odpowiadający za dodanie zdalnego repozytorium do naszego lokalnego repo. </p>
 <p>Słowo <em>origin</em> jest aliasem, czyli krótką nazwą, która identyfikuje nasze zdalne repo. Może to być dowolna inna nazwa, jednak w przykładach najczęściej pojawia się właśnie słowo <em>origin</em>.</p>
-<p>Na samym końcu musimy podać adres url do zdalnego repozytorium.</p>
+<p>Na samym końcu musimy podać pełny adres url do zdalnego repozytorium.</p>
 <p>Gdy wykonamy powyższą komendę nic nie zostanie zwrócone. Jak więc sprawdzić czy wszystko przebiegło poprawnie? Służy do tego polecenie:</p>
 <pre style="background-color:#2b303b;">
 <code class="language-bash" data-lang="bash"><span style="color:#eb6772;">git</span><span style="color:#abb2bf;"> remote</span><span style="color:#eb6772;"> -v
@@ -77,17 +77,17 @@
 <code class="language-bash" data-lang="bash"><span style="color:#eb6772;">origin</span><span style="color:#abb2bf;">  https://github.com/TadeuszSikorski/fresh-evergreen.git (fetch)
 </span><span style="color:#eb6772;">origin</span><span style="color:#abb2bf;">  https://github.com/TadeuszSikorski/fresh-evergreen.git (push)
 </span></code></pre>
-<p>Podany jest alias, url i w nawiasach informacja od czego jest poszczególne repozytorium. Tutaj mamy jedno, więc służy zarówno do wysyłania do niego plików i daje możliwość ich póżniejszego pobrania.</p>
+<p>Podany jest alias, url i informacja w nawiasach od czego jest poszczególne repozytorium. Tutaj mamy podpięte tylko jedno zdalne repozytorium, więc służy ono zarówno do wysyłania plików jak i daje możliwość ich póżniejszego pobrania z niego.</p>
 <h2 id="jak-utworzyc-zdalne-repozytorium">Jak utworzyć zdalne repozytorium?</h2>
-<p>W większości kursów <strong>git</strong> uwagę poświęca się tylko na dodaniu zdalnego repozytorium do lokalnego repo. A pierwszym pytaniem powinno być właśnie jak takie zdalne repozytorium można utworzyć, aby potem można je było podpiąć do lokalnego repozytorium. </p>
+<p>W większości kursów <strong>git</strong> uwagę poświęca się tylko na dodaniu (podpięciu) zdalnego repozytorium do lokalnego repo. A pierwszym pytaniem powinno być właśnie jak takie zdalne repozytorium można utworzyć, aby potem można je było podpiąć do lokalnego repozytorium. </p>
 <p>Zdalne repozytorium można utworzyć np. w serwisach takich jak <strong>Github</strong>, <strong>GitLab</strong>, <strong>Bitbucket</strong>. </p>
 <p>Aby to zrobić w serwisie <strong>Github</strong> najpierw trzeba utworzyć sobie na nim konto lub jeżeli już takowe posiadamy wygodnym jest zainstalowanie sobie narzędzia o nazwie <a href="https://github.com/cli/cli"><strong>GitHub CLI</strong></a>.</p>
-<p>Gdy już to zrobimy musimy je skonfigurować. Pomoże nam w tym <a href="https://cli.github.com/manual/">oficjalna dokumentacja</a>.</p>
+<p>Gdy już to zrobimy musimy je skonfigurować. Pomoże nam w tym <a href="https://cli.github.com/manual/"><em>oficjalna dokumentacja</em></a>.</p>
 <p>Gdy już się z tym uwiniemy możemy w wierszu poleceń otworzyć nasze lokalne repozytorium i wykonać następującą komendę:</p>
 <pre style="background-color:#2b303b;">
 <code class="language-bash" data-lang="bash"><span style="color:#eb6772;">gh</span><span style="color:#abb2bf;"> repo create fresh-evergreen
 </span></code></pre>
-<p>To spowoduje wyświetlenie wyboru ustawień dla naszego zdalnego repozytorium takich jak widoczność, które odpowiada za to czy nasze repo ma być:</p>
+<p>To spowoduje wyświetlenie wyboru ustawień dla naszego zdalnego repozytorium takich jak widoczność, która odpowiada za to czy nasze repo ma być:</p>
 <ul>
 <li>dostępne publicznie, </li>
 <li>prywatne, widoczne tylko dla naszego</li>
@@ -99,7 +99,7 @@
   </span><span style="color:#eb6772;">Private
   Internal
 </span></code></pre>
-<p>Następnie pojawia się pytanie czy wyrażamy zgodę na to by podpiąć tworzone zdalne repozytorium do naszego lokalnego repozytorium czyli krok, który opisałem powyżej. Redukuje to nam ręczne podpinanie zdalnego repozytorium. W tym więc przypadku zaznaczamy <strong>Y</strong>.</p>
+<p>Następnie pojawia się pytanie czy wyrażamy zgodę na to aby podpiąć tworzone zdalne repozytorium do naszego lokalnego repozytorium czyli krok, który opisałem powyżej. Redukuje to nam ręczne podpinanie. W tym więc przypadku zaznaczamy <strong>Y</strong>.</p>
 <pre style="background-color:#2b303b;">
 <code class="language-bash" data-lang="bash"><span style="color:#abb2bf;"> </span><span style="color:#eb6772;">This</span><span style="color:#abb2bf;"> will add an </span><span style="color:#9acc76;">&quot;origin&quot;</span><span style="color:#abb2bf;"> git remote to your local repository. Continue</span><span style="color:#adb7c9;">?</span><span style="color:#abb2bf;"> (Y/n)
 </span></code></pre>
@@ -110,13 +110,17 @@
 </span><span style="color:#eb6772;">✓</span><span style="color:#abb2bf;"> Created repository TadeuszSikorski/fresh-evergreen on GitHub
 </span><span style="color:#eb6772;">✓</span><span style="color:#abb2bf;"> Added remote https://github.com/TadeuszSikorski/fresh-evergreen.git
 </span></code></pre>
-<p>Moim zdaniem łatwa konfiguracja pozwala na załatwienie od razu dwóch rzeczy za jednym razem.</p>
+<p>Moim zdaniem ta łatwa konfiguracja pozwala na załatwienie od razu dwóch rzeczy za jednym razem:</p>
+<ul>
+<li>utworzenia pustego zdalnego repozytorium</li>
+<li>podpięcia go do naszego lokalnego repozytorium.</li>
+</ul>
 <h2 id="wysylanie-zatwierdzonych-plikow-do-zdalnego-repozytorium">Wysyłanie zatwierdzonych plików do zdalnego repozytorium</h2>
-<p>Gdy mamy już podpięte zdalne repozytorium można do niego rozpocząć wysyłanie plików. Uprzednio muszą ode być zatwierdzone, czyli zakomitowane. O czym było w poprzednim <a href="https://tadeuszsikorski.github.io/blog/pierwsze-repozytorium/">poście</a>. Aby to zrobić wystarczy proste polecenie:</p>
+<p>Gdy mamy już podpięte zdalne repozytorium można do niego rozpocząć wysyłanie plików. Uprzednio muszą ode być zatwierdzone, czyli zakomitowane. O czym było w poprzednim <a href="https://tadeuszsikorski.github.io/blog/pierwsze-repozytorium/"><strong>poście</strong></a>. Aby to zrobić wystarczy proste polecenie:</p>
 <pre style="background-color:#2b303b;">
 <code class="language-bash" data-lang="bash"><span style="color:#eb6772;">git</span><span style="color:#abb2bf;"> push origin master
 </span></code></pre>
-<p>Co oznacza wysłanie zatwierdzonych plików (zmian w tych plikach) z głównej gałęzi (<strong>master</strong>) do zdalnego repozytorium oznaczonego odpowiednim aliasem (<strong>origin</strong>). A</p>
+<p>Co oznacza wysłanie zatwierdzonych plików (zmian w tych plikach) z głównej gałęzi (<strong>master</strong>) do zdalnego repozytorium oznaczonego odpowiednim aliasem (<strong>origin</strong>).</p>
 <p>Po wykonaniu tej komendy otrzymamy taką oto odpowiedź: </p>
 <pre style="background-color:#2b303b;">
 <code class="language-bash" data-lang="bash"><span style="color:#eb6772;">Enumerating</span><span style="color:#abb2bf;"> objects: 3, done.
@@ -131,7 +135,7 @@
 <p>Obiekty (pliki) zostały dodane i w naszym pustym zdalnym repozytorium utworzona została nowa gałęź (<strong>master</strong>), czyli gałęź główna z naszego lokalnego repozytorium.</p>
 <h2 id="podsumowanie">Podsumowanie</h2>
 <p>W tej części nauczyłeś się jak podpinać i tworzyć zdalne repozytorium dla lokalnego repozytorium oraz jak w prosty sposób wysyłać zatwierdzone pliki (zmiany) do zdalnego repozytorium.</p>
-<p>W następnej części opowiem o klonowaniu repozytorium, przeglądaniu historii zatwierdzeń.</p>
+<p>W następnej części opowiem o klonowaniu repozytorium i przeglądaniu historii zatwierdzeń.</p>
 <h2 id="zrodla">Źródła</h2>
 <ol>
 <li><a href="http://itcraftsman.pl/kontrola-wersji-z-git-cz-4-zdalne-repozytoria/">itcraftsman.pl - KONTROLA WERSJI Z GIT CZ. 4 – ZDALNE REPOZYTORIA</a></li>
