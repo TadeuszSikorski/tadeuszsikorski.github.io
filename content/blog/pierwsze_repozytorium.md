@@ -1,5 +1,5 @@
 +++
-title="Pierwsze repozytorium  - wstęp do systemu kontroli Git"
+title="Pierwsze repozytorium  - wstęp do systemu kontroli wersji Git"
 date=2021-05-06
 
 [taxonomies]
@@ -98,7 +98,7 @@ Część teoretyczna zawierająca odpowiedzi na pytania:
 
 Zawarta jest w tym [poście](https://tadeuszsikorski.github.io/blog/git-system-kontroli-wersji/).
 
-W następnej części opowiem o tworzeniu i podpinaniu zdalnego repozytorium oraz wysyłaniem do niego zatwierdzonych plików z naszego lokalnego repozytorium. 
+W [**następnej części**](https://tadeuszsikorski.github.io/blog/zdalne-repozytorium/) opowiadam o tworzeniu i podpinaniu zdalnego repozytorium oraz wysyłaniem do niego zatwierdzonych plików (zmian) z naszego lokalnego repozytorium. 
 
 Dla tych który chcą uzupełnić i poszerzyć swoją wiedzę odsyłam do źródeł.
 
