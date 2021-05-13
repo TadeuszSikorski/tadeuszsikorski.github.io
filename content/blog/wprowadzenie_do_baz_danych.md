@@ -17,7 +17,7 @@ W tym poście odpowiemy sobie na następujące pytania:
 
 Informacje zapisane w bazie danych modelują przedmioty, pojęcia lub zjawiska występujące w otaczającym nas świecie. Tak jak ma to miejsce w programowaniu zorientowanym obiektowo. Dla każdego przedmiotu, pojęcia lub zjawiska tworzy się nowy obiekt z odpowiednimi atrybutami.
 
-# 2. Do czego służy baza danych?
+## 2. Do czego służy baza danych?
 
 Zazwyczaj baza danych zawiera całość informacji wykorzystywanych w pewnym obszarze działania, np. baza danych systemu zarządzania przedsiębiorstwem zawiera wszystkie informacje związane z finansami i księgowością, zaopatrzeniem, kadrami i płacami. Tak więc odgrywają one istotną rolę we wszystkich działaniach gospodarczych. Stosuje się je w różnego rodzaju badaniach naukowych, biznesie, analizie i eksploracji danych. 
 
@@ -42,7 +42,7 @@ Przy definiowaniu bazy danych wyróżnia się trzy poziomy modelowania:
 
 Z tego posta dowiedziałeś się co to są bazy danych, po co są używane i jakie są typy baz oraz poziomy ich modelowania. 
 
-W kolejnym wpisie dowiesz się więcej o relacyjnym modelu danych.
+W kolejnym wpisach dowiesz się więcej o [relacyjnych](https://tadeuszsikorski.github.io/blog/relacyjne-bazy-danych/) i [nierelacyjnych](https://tadeuszsikorski.github.io/blog/nierelacyjne-bazy-danych/) bazach danych.
 
 ## Źródła
 
