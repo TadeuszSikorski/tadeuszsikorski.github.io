@@ -61,7 +61,12 @@ W niektórych plikach README możesz zobaczyć małe obrazki, które przekazują
 W zależności od tego, czego dotyczy projekt, dobrym pomysłem może być dołączenie zrzutów ekranu lub nawet wideo (często będziesz widzieć GIF-y zamiast rzeczywistych filmów). Narzędzia takie jak [**ttygif**](https://github.com/icholy/ttygif) mogą pomóc, ale sprawdź też [**Asciinema**](https://asciinema.org/), aby uzyskać bardziej wyrafinowaną metodę.
 
 ### **Instalacja** (*Installation*)
-W ramach określonego ekosystemu może istnieć typowy sposób instalcji projektu, na przykład za pomocą [**Yarn**](), [**NuGet**]() lub [**Homebrew**](). Jednak rozważ możliwość, że ktoś kto czyta Twój plik README, jest nowicjuszem i chciałby uzyskać więcej wskazówek. Wymienienie konkretnych kroków pomaga usunięcia niejednoznaczności i zachęca ludzi do jak najszybszego korzystania z Twojego projektu. 
+W ramach określonego ekosystemu może istnieć typowy sposób instalcji projektu, na przykład za pomocą:
+- [**Yarn**](https://yarnpkg.com/), 
+- [**NuGet**](https://www.nuget.org/)
+- [**Homebrew**](https://brew.sh/)
+- [npm](https://www.npmjs.com/).
+Jednak rozważ możliwość, że ktoś kto czyta Twój plik README, jest nowicjuszem i chciałby uzyskać więcej wskazówek. Wymienienie konkretnych kroków pomaga usunięcia niejednoznaczności i zachęca ludzi do jak najszybszego korzystania z Twojego projektu. 
 
 Jeśli działa tylko w określonym kontekście, takim jak *określona wersja* **języka programowania** lub **system operacyjny** albo ma **zależności**, które należy zainstalować ręcznie, dodaj również sekcję **Wymagania**(*Requirements*).
 
