@@ -2,7 +2,7 @@
 title="Relacyjne bazy danych"
 date=2021-05-12
 [taxonomies]
-tags = ["databases"]
+tags = ["databases", "sql"]
 +++
 
 ## Relacyjny model danych
