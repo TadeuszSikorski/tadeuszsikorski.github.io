@@ -7,7 +7,7 @@ tags = ["databases", "nosql"]
 
 ## Definicja 
 
-**Nierelacyjna baza danych** (**NoSQL**, *Non SQL* lub *Non Relational*) to taka baza danych zapewniająca mechanizm do przechowywania i wyszukiwania danych modelowanych w inny sposób niż relacje tabelaryczne używane w relacjach baz danych SQL.
+**Nierelacyjna baza danych** (**NoSQL**, *Non SQL* lub *Non Relational*) to taka baza danych zapewniająca mechanizm do przechowywania i wyszukiwania danych modelowanych w inny sposób niż relacje tabelaryczne używane w relacjach [baz danych SQL](https://tadeuszsikorski.github.io/blog/relacyjne-bazy-danych/).
 
 NoSQL umożliwia tworzenie prostych projektów, lepszą kontrolę nad dostępnością oraz **horyzontalne skalowanie do klastrów maszyny**, co jest *problemem dla relacyjnych baz danych*. Bazy NoSQL wykorzystywane są coraz częściej w **big data** działających w czasie rzeczywistym. 
 
@@ -21,14 +21,14 @@ Innymi cechami wspólnymi dla baz NoSQL są:
 
 ## Struktury danych używane w bazach NoSQL
 
-Struktury danych używane przez NoSQL różnią się od tych używanych domyślnie w [relacyjnych bazach danych](), dzięki czemu niektóre operacje NoSQL są szybsze. Najczęściej spotykanymi strukturami są:
+Struktury danych używane przez NoSQL różnią się od tych używanych domyślnie w [relacyjnych bazach danych](https://tadeuszsikorski.github.io/blog/relacyjne-bazy-danych/), dzięki czemu niektóre operacje NoSQL są szybsze. Najczęściej spotykanymi strukturami są:
 - klucz–wartość (Aerospike, Apache Ignite, ArangoDB, BerkeleyDB, Couchbase, Dynamo, FairCom c-treeACE, FoundationDB, InfinityDB, LevelDB, MemcacheDB, MUMPS, Oracle NoSQL Database, OrientDB, Project Voldemort, Redis, Riak, SDBM/Flat File dbm, ZooKeeper), 
 - graf (AllegroGraph, ArangoDB, InfiniteGraph, Apache Giraph, MarkLogic, Neo4J, OrientDB, Virtuoso), 
 - dokument (Apache CouchDB, ArangoDB, BaseX, Clusterpoint, Couchbase, Cosmos DB, IBM Domino, MarkLogic, MongoDB, OrientDB, Qizx, RethinkDB), 
 - szerokokolumnowe (Amazon DynamoDB, Bigtable, Cassandra, Druid, HBase, Hypertable, KAI, KDI, OpenNeptune, Qbase)
 - obiektowe (DB4O, Objectivity/DB, Perst, Shoal, ZopeDB).
 
-Wybór konkretnej bazy danych pod względem formy przechowywania danych zależy od problemu, który musi rozwiązać. Czasami struktury danych używane przez bazy danych NoSQL są również postrzegane jako bardziej elastyczne niż relacyjne bazy danych.
+Wybór konkretnej bazy danych pod względem formy przechowywania danych zależy od problemu, który musi rozwiązać. Czasami struktury danych używane przez bazy danych NoSQL są również postrzegane jako bardziej elastyczne niż [relacyjne bazy danych](https://tadeuszsikorski.github.io/blog/relacyjne-bazy-danych/).
 
 ## Rodzaje baz NoSQL
 ### Bazy danych typu klucz-wartość
