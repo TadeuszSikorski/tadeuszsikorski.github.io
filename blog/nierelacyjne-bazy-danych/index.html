@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+    <head>
+        
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" >
+        <meta http-equiv="content-type" content="text/html; charset=utf-8">
+
+        <!-- SEO -->
+        
+        <title> Nierelacyjne bazy danych | Tadeusz Sikorski </title>
+        
+
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1" >
+
+        <link rel="shortcut icon" type="image/x-icon" href="https:&#x2F;&#x2F;tadeuszsikorski.github.io&#x2F;/img/favicon.ico" />
+        <link id="themeCSS" rel="stylesheet"
+                            href="https:&#x2F;&#x2F;tadeuszsikorski.github.io&#x2F;/default.css"
+                            />
+
+        <link rel="preload" href="https://fonts.googleapis.com/css?family=Montserrat:200,300,300i,400,500,500i,600,700,800,900|Raleway" as="style">
+        <link rel="preload"  href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous" as="style" >
+
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:200,300,300i,400,500,500i,600,700,800,900|Raleway">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css"  integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+        
+    </head>
+
+    <body>
+        
+<nav id="overlord" class="overlord" >
+  
+<figure class="mini_logo ">
+    <a href="https:&#x2F;&#x2F;tadeuszsikorski.github.io&#x2F;" style="background-image: url(https:&#x2F;&#x2F;tadeuszsikorski.github.io&#x2F;/img/avatar.jpg)"></a>
+</figure>
+<h5>
+    <a href="https:&#x2F;&#x2F;tadeuszsikorski.github.io&#x2F;">Tadeusz Sikorski</a>
+</h5>
+
+</nav>
+
+<section class="post_container">
+  <article>
+    
+      <h1 class="article_title"><a href="https:&#x2F;&#x2F;tadeuszsikorski.github.io&#x2F;blog&#x2F;nierelacyjne-bazy-danych&#x2F;" id="article_link">Nierelacyjne bazy danych</a></h1>
+      
+<ul class="frontmatter frontmatter_page" id="frontmatter">
+    <li>
+        <time class="article_time"  datetime="2021-05-13">May 13, 2021</time>
+    </li>
+    <span class="dotDivider"></span>
+    <li> 978 words </li>
+    <span class="dotDivider" ></span>
+    <li> 5 min </li>
+    <span class="dotDivider" ></span>
+    
+        <span class="header_list">
+                tags:&nbsp;
+                <a class="tags" href="https://tadeuszsikorski.github.io/tags/databases/">#databases</a>,
+                <a class="tags" href="https://tadeuszsikorski.github.io/tags/nosql/">#nosql</a></span>
+    
+</ul>
+
+      <h2 id="definicja">Definicja</h2>
+<p><strong>Nierelacyjna baza danych</strong> (<strong>NoSQL</strong>, <em>Non SQL</em> lub <em>Non Relational</em>) to taka baza danych zapewniająca mechanizm do przechowywania i wyszukiwania danych modelowanych w inny sposób niż relacje tabelaryczne używane w relacjach <a href="https://tadeuszsikorski.github.io/blog/relacyjne-bazy-danych/">baz danych SQL</a>.</p>
+<p>NoSQL umożliwia tworzenie prostych projektów, lepszą kontrolę nad dostępnością oraz <strong>horyzontalne skalowanie do klastrów maszyny</strong>, co jest <em>problemem dla relacyjnych baz danych</em>. Bazy NoSQL wykorzystywane są coraz częściej w <strong>big data</strong> działających w czasie rzeczywistym. </p>
+<p>NoSQL stworzony został z potrzeby obsługiwania większych wolumenów danych, która wymusiła przejście na model budowania platform na klastrach mniej wydajnych serwerów. Ta zmiana wzbudziła także wątpliwości w sprawie łatwości tworzenia kodu dobrze współpracującego z bazami relacyjnymi.</p>
+<p>Innymi cechami wspólnymi dla baz NoSQL są:</p>
+<ul>
+<li>otwarty kod (open source), </li>
+<li>dopasowanie do potrzeb standardu Web 2.0, </li>
+<li>brak schematu danych,</li>
+<li>możliwość wyboru sposobu przechowywania danych w zależności od ich specyfiki.</li>
+</ul>
+<h2 id="struktury-danych-uzywane-w-bazach-nosql">Struktury danych używane w bazach NoSQL</h2>
+<p>Struktury danych używane przez NoSQL różnią się od tych używanych domyślnie w <a href="https://tadeuszsikorski.github.io/blog/relacyjne-bazy-danych/">relacyjnych bazach danych</a>, dzięki czemu niektóre operacje NoSQL są szybsze. Najczęściej spotykanymi strukturami są:</p>
+<ul>
+<li>klucz–wartość (Aerospike, Apache Ignite, ArangoDB, BerkeleyDB, Couchbase, Dynamo, FairCom c-treeACE, FoundationDB, InfinityDB, LevelDB, MemcacheDB, MUMPS, Oracle NoSQL Database, OrientDB, Project Voldemort, Redis, Riak, SDBM/Flat File dbm, ZooKeeper), </li>
+<li>graf (AllegroGraph, ArangoDB, InfiniteGraph, Apache Giraph, MarkLogic, Neo4J, OrientDB, Virtuoso), </li>
+<li>dokument (Apache CouchDB, ArangoDB, BaseX, Clusterpoint, Couchbase, Cosmos DB, IBM Domino, MarkLogic, MongoDB, OrientDB, Qizx, RethinkDB), </li>
+<li>szerokokolumnowe (Amazon DynamoDB, Bigtable, Cassandra, Druid, HBase, Hypertable, KAI, KDI, OpenNeptune, Qbase)</li>
+<li>obiektowe (DB4O, Objectivity/DB, Perst, Shoal, ZopeDB).</li>
+</ul>
+<p>Wybór konkretnej bazy danych pod względem formy przechowywania danych zależy od problemu, który musi rozwiązać. Czasami struktury danych używane przez bazy danych NoSQL są również postrzegane jako bardziej elastyczne niż <a href="https://tadeuszsikorski.github.io/blog/relacyjne-bazy-danych/">relacyjne bazy danych</a>.</p>
+<h2 id="rodzaje-baz-nosql">Rodzaje baz NoSQL</h2>
+<h3 id="bazy-danych-typu-klucz-wartosc">Bazy danych typu klucz-wartość</h3>
+<p>Bazy klucz–wartość korzystają z asocjacyjnej tablicy znanej również jako mapa lub słownik. Jest to podstawowy model danych. </p>
+<p>W tym modelu dane są reprezentowane jako zbiór par klucz–wartość. Każdy klucz może pojawić się tylko raz w bazie. </p>
+<p>Model klucz–wartość jest jednym z najprostszych nietrywialnych modeli danych. Bogatsze modele danych są często implementowane jako jego rozszerzenie. Model klucz–wartość może zostać rozszerzony na dyskretnie uporządkowany model, który utrzymuje klucze w porządku leksykograficznym. Przez to, że bazy klucz–wartość zawsze wykorzystują klucz główny, przeważnie cechują się wysoką wydajnością i są łatwo skalowalne. W takich bazach wyszukiwanie odbywa się po kluczu.</p>
+<p>Mogą one wykorzystywać modele spójności od spójności ostatecznej (wartość zreplikowana na inne serwery) do możliwości serializacji. Niektóre bazy danych obsługują porządkowanie kluczy. Sposobem na rozwiązanie konfliktu aktualizacji może być faworyzowanie najnowszego wpisu lub zwrócenie wszystkich wartości w celu dokonania wyboru. Istnieją różne implementacje sprzętowe.</p>
+<p>Taka baza wykorzystywana jest do przechowywania: </p>
+<ul>
+<li>obrazów, </li>
+<li>danych sesji, </li>
+<li>koszyka zakupów, 
+a także: </li>
+<li>tworzenia wyspecjalizowanych systemów plików, </li>
+<li>jako pamięci podręcznych obiektów, </li>
+<li>systemów zaprojektowanych pod kątem skalowalności.</li>
+</ul>
+<h3 id="bazy-danych-zorientowane-na-dokumenty">Bazy danych zorientowane na dokumenty</h3>
+<p>Dokument jest podstawowym zbiorem danych dla baz dokumentów. Dokumenty zawierają i kodują dane w niektórych standardowych formatach lub kodowaniach: </p>
+<ul>
+<li><strong>XML</strong>, </li>
+<li><strong>JSON</strong>, </li>
+<li><strong>YAML</strong>,</li>
+<li><strong>BSON</strong> (format binarny). </li>
+</ul>
+<p>Dokumenty są adresowane w bazie danych za pomocą unikalnego klucza, który reprezentuje ten dokument. Jedną z innych cech charakterystycznych bazy danych zorientowanej na dokumenty jest to, że oprócz wyszukiwania klucza przeprowadzanego przez bazy danych typu klucz–wartość, baza danych oferuje również <em>interfejs API</em> lub <em>język zapytań</em>, który pobiera dokumenty na podstawie ich zawartości. </p>
+<p>Różne implementacje oferują różne sposoby organizowania lub grupowania dokumentów: </p>
+<ul>
+<li>kolekcje, </li>
+<li>tagi, </li>
+<li>niewidoczne metadane, </li>
+<li>hierarchie katalogów, </li>
+<li>wiadra.</li>
+</ul>
+<p>W tabelarycznych relacyjnych bazach danych każda kolumna musi zawierać taką samą sekwencję pól definiowana przez wartość lub oznaczona jako <em>null</em>, podczas gdy dokumenty w kolekcji mogą mieć zupełnie inne pola.</p>
+<p>Baza danych zorientowana na dokumenty jest używana do:</p>
+<ul>
+<li>logowania zdarzeń, </li>
+<li>analizy stron internetowych,</li>
+<li>analizy w czasie rzeczywistym, </li>
+<li>aplikacjach e-commerce.</li>
+</ul>
+<h3 id="bazy-danych-typu-rodzina-kolumn">Bazy danych typu rodzina kolumn</h3>
+<p>Analogicznie do relacyjnych baz danych, rodzina kolumn jest tabelą, a każda para klucz–wartość jest rekordem. Każda kolumna to krotka (<em>triplet</em>) składająca się z nazwy kolumny, wartości i stempla czasu. Stempel czasu jest odpowiedzią na problem aktualizacji. </p>
+<p>Istnieją dwa typy rodziny kolumn: </p>
+<ul>
+<li>standardowa rodzina kolumn</li>
+<li>super rodzina kolumn. </li>
+</ul>
+<p>Bazy danych typu rodzina kolumn są używane do:</p>
+<ul>
+<li>logowania zdarzeń, </li>
+<li>zarządzania treścią, </li>
+<li>jako liczniki, </li>
+<li>do wygasających danych.</li>
+</ul>
+<h3 id="bazy-danych-typu-graf">Bazy danych typu graf</h3>
+<p>Ten rodzaj bazy danych jest przeznaczony dla danych, których relacje są dobrze reprezentowane jako wykres składający się z elementów powiązanych ze skończoną liczbą relacji między nimi. </p>
+<p>Rodzajem danych mogą być:</p>
+<ul>
+<li>relacje społeczne, </li>
+<li>połączenia transportu publicznego, </li>
+<li>mapy drogowe, </li>
+<li>topologie sieci itp. </li>
+</ul>
+<p>Baza grafów jest oparta na <strong>węzłach</strong> (<em>encje</em>), <strong>krawędziach</strong> (<em>relacje</em>), <strong>właściwościach</strong>, <strong>teorii grafów</strong>. </p>
+<p>Bazy danych typu graf są używane:</p>
+<ul>
+<li>w sieciach społecznościowych, </li>
+<li>do wytyczania tras.</li>
+</ul>
+<h2 id="obsluga-danych-relacyjnych">Obsługa danych relacyjnych</h2>
+<p>Istnieją trzy główne techniki obsługi danych relacyjnych w bazie danych NoSQL:</p>
+<h3 id="wiele-zapytan-multiple-queries"><strong>Wiele zapytań</strong> (<em>Multiple queries</em>)</h3>
+<p>Zamiast odzyskiwać wszystkie dane za pomocą jednego zapytania, często wykonuje się kilka zapytań w celu uzyskania pożądanych danych. </p>
+<p>Zapytania NoSQL są często szybsze niż tradycyjne zapytania SQL, więc koszt konieczności wykonania dodatkowych zapytań jest akceptowalny.</p>
+<h3 id="buforowanie-caching-replikacja-replication-i-nienormalizowane-dane-non-normalized-data"><strong>Buforowanie</strong> (<em>Caching</em>), <strong>replikacja</strong> (<em>replication</em>) i <strong>nienormalizowane dane</strong> (<em>non-normalized data</em>)</h3>
+<p>Zamiast tylko przechowywać klucze obce, często zachowuje się rzeczywiste obce wartości wraz z danymi modelu. </p>
+<p>Na przykład każdy komentarz do bloga może zawierać oprócz identyfikatora użytkownika także nazwę użytkownika, zapewniając w ten sposób łatwy dostęp do nazwy użytkownika bez konieczności ponownego wyszukiwania. </p>
+<p>Kiedy jednak zmieni się nazwa użytkownika, będzie ona musiała zostać zmieniona w wielu miejscach w bazie danych. Tak więc podejście to działa lepiej w przypadku, gdy odczyty są znacznie częstsze niż zapisy.</p>
+<h3 id="zagniezdzanie-danych-nesting-data"><strong>Zagnieżdżanie danych</strong> (<em>Nesting data</em>)</h3>
+<p>W bazach danych dokumentów, takich jak <strong>MongoDB</strong>, często umieszcza się więcej danych w mniejszej liczbie dokumentów. </p>
+<p>Na przykład w aplikacji do blogowania można wybrać przechowywanie komentarzy w dokumencie posta na blogu, tak aby po pojedynczym pobieraniu otrzymywano wszystkie komentarze. </p>
+<p>Tak więc w tym podejściu pojedynczy dokument zawiera wszystkie dane potrzebne do określonego zadania.</p>
+<h2 id="podsumowanie">Podsumowanie</h2>
+<p>W tym wpisie dowiedziałeś się o nierelacyjnych bazach danych NoSQL, jakich struktur danych używają, gdzie są wykorzystywane. </p>
+<h2 id="zrodla">Źródła</h2>
+<ol>
+<li><a href="https://pl.wikipedia.org/wiki/NoSQL">NoSQL - Wikipedia</a></li>
+</ol>
+
+    
+  </article>
+</section>
+
+
+<script src="https://utteranc.es/client.js"
+        repo="TadeuszSikorski&#x2F;TadeuszSikorski.github.io"
+        
+        issue-term="Nierelacyjne bazy danych"
+        
+        
+        label="comment"
+        
+        theme="github-dark"
+        crossorigin="anonymous"
+        async>
+</script>
+
+
+
+    </body>
+</html>
