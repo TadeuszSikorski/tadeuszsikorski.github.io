@@ -52,7 +52,7 @@ git add .
 
 ## Dodawanie i zatwierdzenie pierwszego pliku do repozytorium
 
-Tak więc tworzymy plik o nazwie **README.md**. *README* to plik tekstowy, który wprowadza i wyjaśnia projekt. Zawiera informacje, które są powszechnie wymagane, aby zrozumieć, o czym jest projekt. Więcej informacji o tym po co jest *README.md*, jak je utworzyć znajdziesz [tutaj](https://www.makeareadme.com/).
+Tak więc tworzymy plik o nazwie **README.md**. *README* to plik tekstowy, który wprowadza i wyjaśnia projekt. Zawiera informacje, które są powszechnie wymagane, aby zrozumieć, o czym jest projekt. Więcej informacji o tym po co jest *README.md* i jak go utworzyć znajdziesz [tutaj](https://www.makeareadme.com/).
 
 Następnie znów wykonujemy polecenie **git status**. Naszym oczom powinny ukazać się następujące informacje:
 ```bash
