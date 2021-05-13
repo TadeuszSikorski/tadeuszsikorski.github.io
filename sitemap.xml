@@ -25,6 +25,10 @@
         <lastmod>2021-02-23</lastmod>
     </url>
     <url>
+        <loc>https://tadeuszsikorski.github.io/blog/wprowadzenie-do-baz-danych/</loc>
+        <lastmod>2021-05-12</lastmod>
+    </url>
+    <url>
         <loc>https://tadeuszsikorski.github.io/blog/zdalne-repozytorium/</loc>
         <lastmod>2021-05-08</lastmod>
     </url>
@@ -42,6 +46,9 @@
     </url>
     <url>
         <loc>https://tadeuszsikorski.github.io/tags/content-roadmap/</loc>
+    </url>
+    <url>
+        <loc>https://tadeuszsikorski.github.io/tags/databases/</loc>
     </url>
     <url>
         <loc>https://tadeuszsikorski.github.io/tags/first-post/</loc>

@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+    <head>
+        
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" >
+        <meta http-equiv="content-type" content="text/html; charset=utf-8">
+
+        <!-- SEO -->
+        
+        <title> Wprowadzenie do baz danych | Tadeusz Sikorski </title>
+        
+
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1" >
+
+        <link rel="shortcut icon" type="image/x-icon" href="https:&#x2F;&#x2F;tadeuszsikorski.github.io&#x2F;/img/favicon.ico" />
+        <link id="themeCSS" rel="stylesheet"
+                            href="https:&#x2F;&#x2F;tadeuszsikorski.github.io&#x2F;/default.css"
+                            />
+
+        <link rel="preload" href="https://fonts.googleapis.com/css?family=Montserrat:200,300,300i,400,500,500i,600,700,800,900|Raleway" as="style">
+        <link rel="preload"  href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous" as="style" >
+
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:200,300,300i,400,500,500i,600,700,800,900|Raleway">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css"  integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+        
+    </head>
+
+    <body>
+        
+<nav id="overlord" class="overlord" >
+  
+<figure class="mini_logo ">
+    <a href="https:&#x2F;&#x2F;tadeuszsikorski.github.io&#x2F;" style="background-image: url(https:&#x2F;&#x2F;tadeuszsikorski.github.io&#x2F;/img/avatar.jpg)"></a>
+</figure>
+<h5>
+    <a href="https:&#x2F;&#x2F;tadeuszsikorski.github.io&#x2F;">Tadeusz Sikorski</a>
+</h5>
+
+</nav>
+
+<section class="post_container">
+  <article>
+    
+      <h1 class="article_title"><a href="https:&#x2F;&#x2F;tadeuszsikorski.github.io&#x2F;blog&#x2F;wprowadzenie-do-baz-danych&#x2F;" id="article_link">Wprowadzenie do baz danych</a></h1>
+      
+<ul class="frontmatter frontmatter_page" id="frontmatter">
+    <li>
+        <time class="article_time"  datetime="2021-05-12">May 12, 2021</time>
+    </li>
+    <span class="dotDivider"></span>
+    <li> 447 words </li>
+    <span class="dotDivider" ></span>
+    <li> 3 min </li>
+    <span class="dotDivider" ></span>
+    
+        <span class="header_list">
+                tags:&nbsp;
+                <a class="tags" href="https://tadeuszsikorski.github.io/tags/databases/">#databases</a></span>
+    
+</ul>
+
+      <p>W tym poście odpowiemy sobie na następujące pytania:</p>
+<ol>
+<li>Czym jest baza danych? </li>
+<li>Do czego służy? </li>
+<li>Jakie są typy baz danych? </li>
+</ol>
+<h2 id="1-definicja-bazy-danych">1. Definicja bazy danych</h2>
+<p><strong>Baza danych</strong> to uporządkowany zbiór informacji przechowywany w formie elektronicznej w pamięci trwałej urządzenia. Wykorzystywany przez programy użytkowe wraz z oprogramowaniem umożliwiającym definiowanie, wykorzystywanie i modyfikowanie danych. Do zarządzania bazą danych służy <strong>System zarządzania bazą danych</strong> (<strong>D</strong>ata<strong>b</strong>ase <strong>M</strong>anagement <strong>S</strong>ystem, <strong>DBMS</strong>). Najprostszym i najstarszym sposobem fizycznej realizacji bazy danych jest zapisanie jej w postaci plików. </p>
+<p>Informacje zapisane w bazie danych modelują przedmioty, pojęcia lub zjawiska występujące w otaczającym nas świecie. Tak jak ma to miejsce w programowaniu zorientowanym obiektowo. Dla każdego przedmiotu, pojęcia lub zjawiska tworzy się nowy obiekt z odpowiednimi atrybutami.</p>
+<h1 id="2-do-czego-sluzy-baza-danych">2. Do czego służy baza danych?</h1>
+<p>Zazwyczaj baza danych zawiera całość informacji wykorzystywanych w pewnym obszarze działania, np. baza danych systemu zarządzania przedsiębiorstwem zawiera wszystkie informacje związane z finansami i księgowością, zaopatrzeniem, kadrami i płacami. Tak więc odgrywają one istotną rolę we wszystkich działaniach gospodarczych. Stosuje się je w różnego rodzaju badaniach naukowych, biznesie, analizie i eksploracji danych. </p>
+<h2 id="typy-baz-danych">Typy baz danych</h2>
+<p>Bazy można podzielić na:</p>
+<ul>
+<li><strong>re­la­cyj­ne</strong> – dane są po­wią­za­ne, tabele powiązane są ze sobą relacjami. Przykładowe bazy danych: <strong>MySQL</strong>, <strong>SQLi­te</strong>.</li>
+<li><strong>obiek­to­we</strong> – dane są prze­cho­wy­wa­ne w struk­tu­rze obiek­to­wej, cechą cha­rak­te­ry­stycz­ną ta­kiej bazy jest to, że prze­cho­wu­je obiek­ty o do­wol­nych struk­tu­rach wraz z przy­pi­sa­ny­mi do nich pro­ce­du­ra­mi</li>
+<li><strong>re­la­cyj­no-obiek­to­we</strong> – dane są prze­cho­wy­wa­ne w struk­tu­rze obiek­to­wej, ale są po­wią­za­ne ze sobą tak jak w ba­zach re­la­cyj­nych. Przykładowe bazy danych: <strong>Post­gre­SQL</strong>, <strong>Oracle</strong>, <strong>Microsoft SQL Server</strong>. </li>
+<li><strong>stru­mie­nio­we</strong> – dane są prze­twa­rza­ne jako stru­mie­nie da­nych, model za­kła­da, że nie­któ­re lub wszyst­kie na­pły­wa­ją­ce do sys­te­mu dane nie są do­stęp­ne w do­wol­nej chwi­li</li>
+<li><strong>tem­po­ral­ne</strong> – są po­dob­ne do baz re­la­cyj­nych, z tą róż­ni­cą, że każdy re­kord po­sia­da swój znacz­nik cza­so­wy, tzw. stem­pel okre­śla­ją­cy, czy w danym cza­sie za­pi­sa­na war­tość jest praw­dzi­wa</li>
+<li><strong>nie­re­la­cyj­ne</strong> – dane są za­pi­sy­wa­ne w for­mie klucz-war­tość i nie są ze sobą po­wią­za­ne, w ta­kiej bazie naj­czę­ściej nie ma wy­ma­ga­nia, żeby obiek­ty były jed­no­rod­ne pod wzglę­dem struk­tu­ry. Przykładowe bazy danych: <strong>Mon­goDB</strong>.</li>
+</ul>
+<h2 id="poziomy-modelowania-baz-danych">Poziomy modelowania baz danych</h2>
+<p>Przy definiowaniu bazy danych wyróżnia się trzy poziomy modelowania: </p>
+<ul>
+<li>zewnętrzny (sposób postrzegania danych przez konkretnego użytkownika bazy danych), </li>
+<li>pojęciowy (sposób organizacji danych, wspólny dla wszystkich użytkowników),</li>
+<li>wewnętrzny (sposób zapamiętania danych w pamięci zewnętrznej).</li>
+</ul>
+<h2 id="podsumowanie">Podsumowanie</h2>
+<p>Z tego posta dowiedziałeś się co to są bazy danych, po co są używane i jakie są typy baz oraz poziomy ich modelowania. </p>
+<p>W kolejnym wpisie dowiesz się więcej o relacyjnym modelu danych.</p>
+<h2 id="zrodla">Źródła</h2>
+<ol>
+<li><a href="https://encyklopedia.pwn.pl/haslo/baza-danych;3875256.html">Baza danych - Encyklopedia PWN</a></li>
+<li><a href="https://chcenawczoraj.pl/software/co-to-jest-baza-danych-jakie-rodzaje-baz-warto-znac">Chcę na wcoraj - Co to jest baza danych? Jakie rodzaje baz warto znać?</a></li>
+</ol>
+
+    
+  </article>
+</section>
+
+
+<script src="https://utteranc.es/client.js"
+        repo="TadeuszSikorski&#x2F;TadeuszSikorski.github.io"
+        
+        issue-term="Wprowadzenie do baz danych"
+        
+        
+        label="comment"
+        
+        theme="github-dark"
+        crossorigin="anonymous"
+        async>
+</script>
+
+
+
+    </body>
+</html>
