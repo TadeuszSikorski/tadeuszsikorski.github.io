@@ -47,7 +47,7 @@ Wymienione tu języki są podstawową grupą języków podrzędnych języka SQL.
 
 Z tego wpisu dowiedziałeś się o relacyjnym modelu danych, algebrze relacji i relacyjnych bazach danych. 
 
-W kolejnym wpisie dowiesz się więcej o nierelacyjnym modelu danych i nierelacyjnych bazach danych.
+W [kolejnym wpisie](https://tadeuszsikorski.github.io/blog/nierelacyjne-bazy-danych/) dowiesz się więcej o nierelacyjnym modelu danych i nierelacyjnych bazach danych.
 
 ## Źródła
 
