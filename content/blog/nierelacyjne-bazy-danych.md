@@ -22,11 +22,11 @@ Innymi cechami wspólnymi dla baz NoSQL są:
 ## Struktury danych używane w bazach NoSQL
 
 Struktury danych używane przez NoSQL różnią się od tych używanych domyślnie w [relacyjnych bazach danych](https://tadeuszsikorski.github.io/blog/relacyjne-bazy-danych/), dzięki czemu niektóre operacje NoSQL są szybsze. Najczęściej spotykanymi strukturami są:
-- klucz–wartość (Aerospike, Apache Ignite, ArangoDB, BerkeleyDB, Couchbase, Dynamo, FairCom c-treeACE, FoundationDB, InfinityDB, LevelDB, MemcacheDB, MUMPS, Oracle NoSQL Database, OrientDB, Project Voldemort, Redis, Riak, SDBM/Flat File dbm, ZooKeeper), 
-- graf (AllegroGraph, ArangoDB, InfiniteGraph, Apache Giraph, MarkLogic, Neo4J, OrientDB, Virtuoso), 
-- dokument (Apache CouchDB, ArangoDB, BaseX, Clusterpoint, Couchbase, Cosmos DB, IBM Domino, MarkLogic, MongoDB, OrientDB, Qizx, RethinkDB), 
-- szerokokolumnowe (Amazon DynamoDB, Bigtable, Cassandra, Druid, HBase, Hypertable, KAI, KDI, OpenNeptune, Qbase)
-- obiektowe (DB4O, Objectivity/DB, Perst, Shoal, ZopeDB).
+- **klucz–wartość** (Aerospike, Apache Ignite, ArangoDB, BerkeleyDB, Couchbase, Dynamo, FairCom c-treeACE, FoundationDB, InfinityDB, LevelDB, MemcacheDB, MUMPS, Oracle NoSQL Database, OrientDB, Project Voldemort, Redis, Riak, SDBM/Flat File dbm, ZooKeeper), 
+- **graf** (AllegroGraph, ArangoDB, InfiniteGraph, Apache Giraph, MarkLogic, Neo4J, OrientDB, Virtuoso), 
+- **dokument** (Apache CouchDB, ArangoDB, BaseX, Clusterpoint, Couchbase, Cosmos DB, IBM Domino, MarkLogic, MongoDB, OrientDB, Qizx, RethinkDB), 
+- **szerokokolumnowe** (Amazon DynamoDB, Bigtable, Cassandra, Druid, HBase, Hypertable, KAI, KDI, OpenNeptune, Qbase)
+- **obiektowe** (DB4O, Objectivity/DB, Perst, Shoal, ZopeDB).
 
 Wybór konkretnej bazy danych pod względem formy przechowywania danych zależy od problemu, który musi rozwiązać. Czasami struktury danych używane przez bazy danych NoSQL są również postrzegane jako bardziej elastyczne niż [relacyjne bazy danych](https://tadeuszsikorski.github.io/blog/relacyjne-bazy-danych/).
 
