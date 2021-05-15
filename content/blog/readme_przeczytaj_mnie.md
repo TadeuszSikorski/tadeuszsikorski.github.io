@@ -59,6 +59,15 @@ Jeśli istnieją alternatywy dla twojego projektu, jest to dobre miejsce na wymi
 ### **Odznaki**
 W niektórych plikach README możesz zobaczyć małe obrazki, które przekazują metadane, takie jak informacje o tym, czy wszystkie testy przeszły pomyślnie. Możesz użyć [**Shields**](https://shields.io/), aby dodać ich trochę do swojego **README**.
 
+Przykładowe odznaki:
+
+![logo](https://img.shields.io/badge/fresh-evergreen-brightgreen)
+![LICENSE](https://img.shields.io/github/license/TadeuszSikorski/fresh-evergreen?style=plastic)
+![issues](https://img.shields.io/github/issues/TadeuszSikorski/fresh-evergreen)
+![stars](https://img.shields.io/github/stars/TadeuszSikorski/fresh-evergreen)
+![twitter](https://img.shields.io/twitter/url?url=https%3A%2F%2Fgithub.com%2FTadeuszSikorski%2Ffresh-evergreen
+)
+
 ### **Wizualizacje**
 W zależności od tego, czego dotyczy projekt, dobrym pomysłem może być dołączenie zrzutów ekranu lub nawet wideo (często będziesz widzieć GIF-y zamiast rzeczywistych filmów). Narzędzia takie jak [**ttygif**](https://github.com/icholy/ttygif) mogą pomóc, ale sprawdź też [**Asciinema**](https://asciinema.org/), aby uzyskać bardziej wyrafinowaną metodę.
 
