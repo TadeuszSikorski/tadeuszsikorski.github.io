@@ -9,7 +9,9 @@ tags = ["git", "markdown"]
 Dzisiejszy wpis rozpoczniemy sobie od odpowiedzi na kilka pytań.
 
 ## Co to jest **README.md**?
-**README** to plik tekstowy, który wprowadza i wyjaśnia **projekt**. Zawiera informacje, które są powszechnie **wymagane**, aby zrozumieć, o czym jest projekt. Jest pierwszym plikiem, który **powinno się** czytać otwierając **nowy projekt**.
+**README** to plik tekstowy, który jest wprowadzeniem do **projektu**. Zawiera informacje, które są powszechnie **wymagane**, aby zrozumieć, o czym jest projekt. Jest pierwszym plikiem, który **powinno się** czytać otwierając **nowy projekt**.
+
+Ogólnie mówiąc opisuje to, co zawiera wasz projekt i dlaczego jest on **warty uwagi**.
 
 ## Po co tworzymy **README**?
 
@@ -42,7 +44,7 @@ Możesz także użyć dedykowanego edytora **Markdown**, takiego jak [**Typora**
 
 ## Jak napisać dobre README?
 
-Każdy projekt jest inny, więc zastanów się, które z tych sekcji dotyczą Twojego. Sekcje użyte w szablonie są sugestiami dla większości projektów open source. Należy również pamiętać, że podczas gdy plik README może być zbyt długi i szczegółowy, za długi jest lepszy niż za krótki. Jeśli uważasz, że plik README jest zbyt długi, rozważ skorzystanie z innej formy dokumentacji zamiast wycinania informacji.
+Każdy projekt jest inny, więc zastanów się, które z tych sekcji dotyczą Twojego. Sekcje zaprezentowane poniżej są sugestiami, które są wspólne dla większości projektów open source. Należy również pamiętać, że podczas gdy plik **README** może być zbyt długi i szczegółowy, to za długi jest lepszy niż jak jest za krótki. Jeśli uważasz, że plik **README** jest zbyt długi, rozważ skorzystanie z innej formy dokumentacji zamiast wycinania informacji.
 
 ### **Nazwa**
 Wybierz zrozumiałą nazwę dla swojego projektu.
@@ -65,15 +67,16 @@ W ramach określonego ekosystemu może istnieć typowy sposób instalcji projekt
 - [**Yarn**](https://yarnpkg.com/), 
 - [**NuGet**](https://www.nuget.org/)
 - [**Homebrew**](https://brew.sh/)
-- [npm](https://www.npmjs.com/).
-Jednak rozważ możliwość, że ktoś kto czyta Twój plik README, jest nowicjuszem i chciałby uzyskać więcej wskazówek. Wymienienie konkretnych kroków pomaga usunięcia niejednoznaczności i zachęca ludzi do jak najszybszego korzystania z Twojego projektu. 
+- [**npm**](https://www.npmjs.com/).
 
-Jeśli działa tylko w określonym kontekście, takim jak *określona wersja* **języka programowania** lub **system operacyjny** albo ma **zależności**, które należy zainstalować ręcznie, dodaj również sekcję **Wymagania**(*Requirements*).
+Jednak rozważ też możliwość, że ktoś kto czyta Twój plik **README**, jest nowicjuszem i chciałby uzyskać więcej wskazówek. Wymienienie konkretnych kroków pomaga usunięcia niejednoznaczności i zachęca ludzi do jak najszybszego korzystania z Twojego projektu. 
+
+Jeśli działa tylko w określonym kontekście, takim jak *określona wersja* **języka programowania** lub określony **system operacyjny** lub ma **zależności**, które należy zainstalować ręcznie, dodaj również sekcję **Wymagania**(*Requirements*).
 
 ### **Zastosowanie** (*Usage*)
 Zaprezentuj przykłady zastosowania projektu, jeśli możesz, pokaż oczekiwane wyniki działania danej funkcji. 
 
-Pomocne jest umieszczenie w wierszu najmniejszego przykładu użycia, który można zademonstrować, jednocześnie udostępniając linki do bardziej wyrafinowanych przykładów, jeśli są one zbyt długie, aby można je było zamieścić w **pliku README**.
+Pomocne jest umieszczenie najmniejszego przykładu użycia, który można zademonstrować, jednocześnie udostępniając linki do bardziej wyrafinowanych przykładów, jeśli są one zbyt długie, aby można je było zamieścić w **pliku README**.
 
 ### **Wsparcie** (*Support*)
 Powiedz innym, jak mogą zwrócić się do Ciebie o pomoc, gdy napotkają problem z Twoim projektem. 
