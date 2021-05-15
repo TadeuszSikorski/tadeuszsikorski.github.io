@@ -1,5 +1,5 @@
 +++
-title="Pierwsze repozytorium  - wstęp do systemu kontroli wersji Git"
+title="Pierwsze repozytorium  - praktyczny wstęp do systemu kontroli wersji Git"
 date=2021-05-06
 
 [taxonomies]
